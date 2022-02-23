@@ -4,11 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint app.js",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "precommit": "eslint ."
   },
   "engines": {
     "node": "^14",
@@ -18,7 +18,9 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.9.0",
+    "eslint-config-recommended": "^4.1.0",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
     "prettier": "^2.5.1"
   }
 }
